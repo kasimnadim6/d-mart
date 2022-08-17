@@ -1,0 +1,45 @@
+.products {
+  display: flex;
+  //   flex: 2;
+  //   width: 75%;
+  flex-wrap: wrap;
+  gap: 2rem;
+  .product {
+    background-color: #e2e2e2;
+    width: 25rem;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    &-image {
+      width: 100%;
+      height: 150px;
+    }
+    &-title {
+      padding: 1rem;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      button {
+        padding: 1rem;
+        border: none;
+        text-transform: uppercase;
+        font-weight: lighter;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:active {
+          transform: translateY(0.3rem) scale(0.99);
+        }
+      }
+      .add {
+        background-color: #61b15a;
+        color: white;
+      }
+      .remove {
+        background-color: #d32626;
+        color: white;
+      }
+    }
+  }
+}
